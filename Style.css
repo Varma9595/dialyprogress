@@ -26,14 +26,18 @@
 .content {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: 25px;
-	margin-right: 25px;
+	justify-content: center;
+	padding: 1px 1px;
+	
+	margin: 20px;
+	
 	background: white;
 	border-radius: 30px;
+	flex-wrap: wrap;
+	gap: 10px;
 }
+
+
 input {
 	flex: 1;
 	outline: none;
@@ -50,10 +54,11 @@ button {
 	color: red;
 	border-radius: 30px;
 	font-size: 16px;
-	margin-right: -20px;
+	margin-left: 10px;
 	cursor: pointer;
 	border-style: solid;
 	border-width: 0.5px;
+	flex: 0 0 auto;
 }
 button:hover {
 	background-color: red;
@@ -107,13 +112,14 @@ ol li span:hover{
   font-weight: bold;
 }
 @media (max-width: 500px) {
-	.inputs {
+	.content {
 		flex-direction: column;
 	}
-	.inputs input, .inputs button {
+	.content input, .content button {
 		width: 100%;
+		margin: 5px 0;
 	}
-	ul li {
-		font-size: 16px;
+	#task-count {
+		margin: 20px auto;
 	}
 }
