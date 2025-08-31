@@ -1,0 +1,119 @@
+.container {
+	width: 100%;
+	max-width: 550px;
+	margin: 100px auto 25px;
+	padding: 50px 30px 70px;
+	background-color: blue;
+	border-radius: 10px;	
+}
+.h-1 {
+	color: white;
+	text-align: center;
+	margin-top: -40px;
+}
+.my-name {
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background: white;
+	border-radius: 10px;
+}
+.header-Name {
+	margin-right: 50px;
+}
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+	background: white;
+	border-radius: 30px;
+}
+input {
+	flex: 1;
+	outline: none;
+	border: none;
+	background: transparent;
+	padding: 8px;
+	font-size: 14px;
+}
+button {
+	border: none;
+	outline: 20px;
+	padding: 12px 30px;
+	background-color: white;
+	color: red;
+	border-radius: 30px;
+	font-size: 16px;
+	margin-right: -20px;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 0.5px;
+}
+button:hover {
+	background-color: red;
+	color: white;
+}
+
+ol li {
+	display: flex;
+	font-size: 18px;
+	user-select: none;
+	cursor: pointer;
+	padding: 10px ;
+	color: white;
+	position: relative;
+	display: list-item;
+}
+ol li.checked {
+	color: white;
+	text-decoration: line-through;
+}
+ol li span{
+	position: absolute;
+	color: white;
+	right: 40px;
+	line-height: 20px;
+	text-align: center;
+	width: 20px;
+	height:20px;
+	border-radius: 50px;
+	font-size: 22px;
+	flex-direction: column;
+	
+}
+ol li span:hover{
+	background-color: red;
+	cursor: pointer;
+}
+#task-count {
+  background-color: White; /* Green background */
+  color: black;              /* White text */
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 5px 10px;        /* Top/Bottom + Left/Right padding */
+  
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  font-size: 16px;           /* Font size */
+  margin-right: 410px;
+  margin-bottom: -50px;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+	.inputs {
+		flex-direction: column;
+	}
+	.inputs input, .inputs button {
+		width: 100%;
+	}
+	ul li {
+		font-size: 16px;
+	}
+}
